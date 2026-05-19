@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Maheshwar Chandra Roy | Expert Frontend Web Developer</title>
+    <meta name="description" content="Portfolio of Maheshwar Chandra Roy, a professional Frontend Web Developer specializing in React, JavaScript, TypeScript, and responsive UI/UX design. Contact for modern web applications.">
+    <meta name="keywords" content="Maheshwar Chandra Roy, Frontend Developer, Web Developer, React Developer, UI UX Designer, mcrbot, Tailwind CSS, JavaScript Developer Bangladesh">
+    <meta name="author" content="Maheshwar Chandra Roy">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mcrbot.com">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mcrbot.com">
+    <meta property="og:title" content="Maheshwar Chandra Roy | Frontend Web Developer">
+    <meta property="og:description" content="I build exceptional digital experiences with modern web technologies. Check out my latest React and Tailwind CSS projects.">
+    <meta property="og:image" content="https://mcrbot.com/maheshwar.png">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mcrbot.com">
+    <meta property="twitter:title" content="Maheshwar Chandra Roy | Frontend Web Developer">
+    <meta property="twitter:description" content="I build exceptional digital experiences with modern web technologies. Check out my latest React and Tailwind CSS projects.">
+    <meta property="twitter:image" content="https://mcrbot.com/maheshwar.png">
+
+    <link rel="shortcut icon" href="favicon.ico?v=2" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=2">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png?v=2">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png?v=2">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("C22xWwj-keur-jnUQ"); 
+        })();
+    </script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            light: '#3b82f6',
+                            dark: '#2563eb'
+                        }
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.5s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="light bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
+    <header class="fixed w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <a href="#" class="flex items-center space-x-2" aria-label="mcrbot logo Home">
+                    <img src="mcrbotlogo.png" alt="mcrbot logo" class="h-10 w-auto object-contain">
+                </a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button id="theme-toggle" class="theme-toggle p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon dark:hidden"></i>
+                        <i class="fas fa-sun hidden dark:block"></i>
+                    </button>
+                    
+                    <button id="mobile-menu-button" class="md:hidden p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700" aria-label="Open Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-800 shadow-lg">
+            <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center pt-20">
+            <div class="container mx-auto px-6 py-20">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 mb-12 md:mb-0 animate-fade-in">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I'm <span class="gradient-text">Maheshwar Chandra Roy</span></h1>
+                        <h2 class="text-2xl md:text-3xl font-semibold mb-6">Professional Frontend Web Developer</h2>
+                        <p class="text-lg mb-8 text-gray-600 dark:text-gray-300 max-w-lg">
+                            I build exceptional digital experiences with modern web technologies. Focused on creating beautiful, functional, and user-friendly web applications.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#contact" class="px-6 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg hover:opacity-90 transition-opacity shadow-md hover:shadow-lg transform hover:-translateY-0.5 transition-all">
+                                Contact Me
+                            </a>
+                            <a href="#projects" class="px-6 py-3 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+                                View Work
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center animate-slide-up">
+                        <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary-light dark:border-primary-dark shadow-xl">
+                            <img src="maheshwar.png" alt="Maheshwar Chandra Roy - Frontend Developer" class="w-full h-full object-cover object-top">
+                            <div class="absolute inset-0 bg-primary-light dark:bg-primary-dark opacity-10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-gray-100 dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">About <span class="gradient-text">Maheshwar</span></h2>
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/3 mb-8 md:mb-0 flex justify-center">
+                        <div class="w-64 h-64 rounded-lg overflow-hidden shadow-lg">
+                            <img src="maheshwar.png" alt="Maheshwar Chandra Roy Profile Picture" class="w-full h-full object-cover object-top">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 md:pl-12">
+                        <h3 class="text-2xl font-semibold mb-4">Who I Am</h3>
+                        <p class="mb-6 text-gray-600 dark:text-gray-300">
+                            I'm a passionate frontend developer creating modern web applications. I specialize in React, JavaScript, TypeScript, and responsive design principles. My goal is to build products that not only look great but also provide seamless user experiences.
+                        </p>
+                        <div class="grid grid-cols-1 gap-6">
+                            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm transform hover:-translateY-1 transition-all duration-300">
+                                <div class="flex items-center mb-4">
+                                    <div class="p-3 rounded-full bg-blue-500/10 mr-4">
+                                        <i class="fas fa-briefcase text-primary-light dark:text-primary-dark"></i>
+                                    </div>
+                                    <h4 class="font-semibold">Professional Experience</h4>
+                                </div>
+                                <p class="text-gray-600 dark:text-gray-300">
+                                    Lead Web Developer & Designer<br>
+                                    <strong>mcrbot.com</strong>, 2024-Present
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">My Featured <span class="gradient-text">Projects</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translateY-2 transition-all duration-300">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" alt="Restaurant Web Design Project Overview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-primary-light dark:text-primary-dark">Restaurant Web Design</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                A premium website featuring a fully interactive digital menu, reservation system, and stunning gallery showcase for modern food brands.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium">HTML5</span>
+                                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium">JavaScript</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">Live Demo <i class="fas fa-external-link-alt ml-1.5 text-xs"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 font-medium hover:underline flex items-center">Source Code <i class="fab fa-github ml-1.5 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:-translateY-2 transition-all duration-300">
+                        <div class="h-56 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1174&q=80" alt="Beauty Parlor Website Project Overview" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold mb-2 text-primary-light dark:text-primary-dark">Beauty Parlor & Makeup Artist</h3>
+                            <p class="text-gray-600 dark:text-gray-300 mb-4">
+                                An elegant booking portfolio website for makeup artists and salons. Includes service pricing tiers, testimonials, and appointment scheduling.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium">React</span>
+                                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium">Tailwind CSS</span>
+                                <span class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded-full text-sm font-medium">Animations</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-primary-light dark:text-primary-dark font-medium hover:underline flex items-center">Live Demo <i class="fas fa-external-link-alt ml-1.5 text-xs"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 font-medium hover:underline flex items-center">Source Code <i class="fab fa-github ml-1.5 text-xs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 bg-gray-100 dark:bg-gray-800">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">Technical <span class="gradient-text">Skills</span></h2>
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center transform hover:-translateY-1 transition-all">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary-light/10 dark:bg-primary-dark/10 rounded-full">
+                            <i class="fab fa-react text-3xl text-primary-light dark:text-primary-dark" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">React</h3>
+                        <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-primary-light dark:bg-primary-dark h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center transform hover:-translateY-1 transition-all">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary-light/10 dark:bg-primary-dark/10 rounded-full">
+                            <i class="fab fa-js text-3xl text-primary-light dark:text-primary-dark" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">JavaScript</h3>
+                        <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-primary-light dark:bg-primary-dark h-2.5 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center transform hover:-translateY-1 transition-all">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-blue-500/10 dark:bg-blue-400/10 rounded-full">
+                            <span class="text-xl font-bold text-blue-600 dark:text-blue-400">TS</span>
+                        </div>
+                        <h3 class="font-semibold mb-2">TypeScript</h3>
+                        <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-blue-600 dark:bg-blue-500 h-2.5 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center transform hover:-translateY-1 transition-all">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary-light/10 dark:bg-primary-dark/10 rounded-full">
+                            <i class="fab fa-vuejs text-3xl text-primary-light dark:text-primary-dark" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">Vue.js</h3>
+                        <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-primary-light dark:bg-primary-dark h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-sm text-center transform hover:-translateY-1 transition-all">
+                        <div class="w-16 h-16 mx-auto mb-4 flex items-center justify-center bg-primary-light/10 dark:bg-primary-dark/10 rounded-full">
+                            <i class="fab fa-css3-alt text-3xl text-primary-light dark:text-primary-dark" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="font-semibold mb-2">CSS/Tailwind</h3>
+                        <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2.5">
+                            <div class="bg-primary-light dark:bg-primary-dark h-2.5 rounded-full" style="width: 92%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-20 animate-slide-up">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">What Clients <span class="gradient-text">Say</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150" alt="John Doe - TechStart CEO" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold">John Doe</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">CEO, TechStart</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 italic">"Maheshwar did an outstanding job developing our web application. His attention to detail and clean frontend structure made the process so smooth."</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150" alt="Sarah Jenkins - GlamourStudio Founder" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Sarah Jenkins</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Founder, GlamourStudio</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 italic">"The beauty parlor booking website he built is beautiful and fully responsive. Our client conversions have increased massively since launch!"</p>
+                    </div>
+
+                    <div class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700/50 hover:shadow-xl transition-shadow duration-300">
+                        <div class="flex items-center mb-6">
+                            <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Alex Rivera - FoodBite Manager" class="w-full h-full object-cover">
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Alex Rivera</h4>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Manager, FoodBite</p>
+                            </div>
+                        </div>
+                        <div class="text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 italic">"Excellent communication and incredible Tailwind CSS implementation. He brought our creative restaurant designs to life flawlessly."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold mb-12 text-center">Get In <span class="gradient-text">Touch</span></h2>
+                
+                <div class="flex flex-col md:flex-row max-w-5xl mx-auto items-center md:items-stretch gap-12">
+                    <div class="md:w-1/2 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                            <p class="mb-8 text-gray-600 dark:text-gray-300">
+                                Feel free to reach out to me for project inquiries, collaborations, or just to say hello. I'll get back to you as soon as possible.
+                            </p>
+                            
+                            <div class="flex items-center space-x-5 bg-white dark:bg-gray-800 p-5 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700/50 mb-8 transform hover:scale-[1.02] transition-transform duration-300">
+                                <div class="w-20 h-20 rounded-full overflow-hidden border-2 border-primary-light dark:border-primary-dark flex-shrink-0 shadow-md">
+                                    <img src="maheshwar.png" alt="Maheshwar Chandra Roy Official" class="w-full h-full object-cover object-top">
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold text-gray-900 dark:text-white">Maheshwar Chandra Roy</h4>
+                                    <p class="text-sm font-medium text-primary-light dark:text-primary-dark">Frontend Web Developer</p>
+                                </div>
+                            </div>
+                            
+                            <div class="space-y-6">
+                                <div class="flex items-center">
+                                    <div class="p-3 rounded-full bg-primary-light/10 dark:bg-primary-dark/10 mr-4 flex-shrink-0">
+                                        <i class="fas fa-envelope text-primary-light dark:text-primary-dark"></i>
+                                    </div>
+                                    <div class="relative group cursor-pointer">
+                                        <h4 class="font-semibold text-sm text-gray-400">Email Address</h4>
+                                        <div class="flex items-center space-x-2">
+                                            <a href="mailto:info@mcrbot.com" class="text-gray-700 dark:text-gray-200 hover:text-primary-light dark:hover:text-primary-dark transition-colors font-semibold">
+                                                info@mcrbot.com
+                                            </a>
+                                            <button onclick="copyEmail()" class="text-gray-400 hover:text-secondary-light p-1 rounded transition-colors" title="Copy Email">
+                                                <i id="copy-icon" class="far fa-copy text-sm"></i>
+                                            </button>
+                                        </div>
+                                        <span id="copy-toast" class="absolute left-0 -top-8 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300 pointer-events-none">Copied!</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8 md:mt-0">
+                            <h4 class="font-semibold mb-4">Follow Me</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/0xmcr" target="_blank" rel="noopener noreferrer" class="p-3 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-900 hover:text-white dark:hover:bg-white dark:hover:text-gray-900 transform hover:-translateY-1.5 transition-all duration-300 shadow-sm" aria-label="Github Profile">
+                                    <i class="fab fa-github text-xl"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mahseshwar/" target="_blank" rel="noopener noreferrer" class="p-3 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-700 transform hover:-translateY-1.5 transition-all duration-300 shadow-sm" aria-label="LinkedIn Profile">
+                                    <i class="fab fa-linkedin-in text-xl"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61586674904734" target="_blank" rel="noopener noreferrer" class="p-3 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-blue-800 hover:text-white dark:hover:bg-blue-900 transform hover:-translateY-1.5 transition-all duration-300 shadow-sm" aria-label="Facebook Profile">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/mcr.real" target="_blank" rel="noopener noreferrer" class="p-3 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gradient-to-tr hover:from-yellow-500 hover:to-purple-600 hover:text-white transform hover:-translateY-1.5 transition-all duration-300 shadow-sm" aria-label="Instagram Profile">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2 w-full">
+                        <form id="contact-form" class="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md hover:shadow-xl border border-gray-100 dark:border-gray-700/50 transition-all duration-300">
+                            <div class="mb-6">
+                                <label for="name" class="block mb-2 font-medium">Name</label>
+                                <input type="text" name="name" id="name" placeholder="e.g. John Doe" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-transparent transition-colors placeholder-gray-400 dark:placeholder-gray-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block mb-2 font-medium">Email</label>
+                                <input type="email" name="email" id="email" placeholder="e.g. john@example.com" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-transparent transition-colors placeholder-gray-400 dark:placeholder-gray-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="subject" class="block mb-2 font-medium">Subject</label>
+                                <input type="text" name="subject" id="subject" placeholder="Project Collaboration" required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-transparent transition-colors placeholder-gray-400 dark:placeholder-gray-500">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block mb-2 font-medium">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Hi Maheshwar, I would love to work with you on..." required class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-light dark:focus:ring-primary-dark bg-transparent transition-colors placeholder-gray-400 dark:placeholder-gray-500"></textarea>
+                            </div>
+                            
+                            <button type="submit" id="submit-btn" class="w-full px-6 py-3 bg-primary-light dark:bg-primary-dark text-white rounded-lg hover:opacity-90 shadow-md hover:shadow-lg transform hover:-translateY-0.5 transition-all font-semibold">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 dark:bg-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="flex items-center space-x-2" aria-label="mcrbot logo Footer">
+                        <img src="mcrbotlogo.png" alt="mcrbot logo" class="h-8 w-auto object-contain">
+                    </a>
+                    <p class="mt-2 text-gray-600 dark:text-gray-300">&copy; 2026 Maheshwar Chandra Roy. All Rights Reserved</p>
+                </div>
+                
+                <div class="flex space-x-6">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const emailText = "info@mcrbot.com";
+            navigator.clipboard.writeText(emailText).then(() => {
+                const toast = document.getElementById('copy-toast');
+                const icon = document.getElementById('copy-icon');
+                
+                icon.className = "fas fa-check text-green-500";
+                toast.classList.remove('opacity-0');
+                toast.classList.add('opacity-100');
+                
+                setTimeout(() => {
+                    icon.className = "far fa-copy text-sm";
+                    toast.classList.remove('opacity-100');
+                    toast.classList.add('opacity-0');
+                }, 2000);
+            });
+        }
+
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const btn = document.getElementById('submit-btn');
+            btn.innerHTML = 'Sending...';
+            btn.disabled = true;
+
+            const serviceID = 'service_mcrbot';
+            const templateID = 'template_dacrdgm';
+
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.innerHTML = 'Message Sent Successfully!';
+                    btn.style.backgroundColor = '#10b981';
+                    alert('Thank you! Your message has been sent successfully.');
+                    document.getElementById('contact-form').reset();
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = 'Send Message';
+                        btn.disabled = false;
+                        btn.style.backgroundColor = ''; 
+                    }, 4000);
+                }, (err) => {
+                    btn.innerHTML = 'Failed to Send';
+                    btn.style.backgroundColor = '#ef4444';
+                    alert('Oops! Something went wrong: ' + JSON.stringify(err));
+                    
+                    setTimeout(() => {
+                        btn.innerHTML = 'Send Message';
+                        btn.disabled = false;
+                        btn.style.backgroundColor = '';
+                    }, 4000);
+                });
+        });
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+        
+        const savedTheme = localStorage.getItem('theme') || 
+                          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        
+        if (savedTheme === 'dark') {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                html.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('#mobile-menu .nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-fade-in, .animate-slide-up');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (elementPosition < screenPosition) {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }
+            });
+        };
+        
+        document.querySelectorAll('.animate-fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+        });
+        
+        document.querySelectorAll('.animate-slide-up').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.animation = 'slideUp 0.5s ease-out forwards';
+        });
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
