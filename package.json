@@ -1,0 +1,27 @@
+{
+  "name": "mcrbot",
+  "version": "1.0.0",
+  "description": "Portfolio website for Maheshwar Chandra Roy with Vercel Speed Insights",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0xmcr/mcrbot.git"
+  },
+  "keywords": [
+    "portfolio",
+    "frontend",
+    "speed-insights"
+  ],
+  "author": "Maheshwar Chandra Roy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0xmcr/mcrbot/issues"
+  },
+  "homepage": "https://github.com/0xmcr/mcrbot#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
